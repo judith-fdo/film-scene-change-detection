@@ -1,0 +1,55 @@
+# Exclude images (too large)
+Data/data/data/*.png
+Data/data/data/*.jpg
+Data/data/data/*.jpeg
+
+# Keep important CSV files
+!Data/train.csv
+!Data/test.csv
+!Data/submission_yolov11_final.csv
+
+# Exclude model (large file)
+Data/best_siamese_model.pt
+
+# Exclude other CSV experiments
+Data/*.csv
+!Data/train.csv
+!Data/test.csv
+!Data/submission_yolov11_final.csv
+
+# Virtual environments
+venv/
+venv2/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints
+Notebooks/.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
