@@ -22,7 +22,6 @@
 - [Technical Details](#technical-details)
 - [Key Learnings](#key-learnings)
 - [Team](#team)
-- [License](#license)
 
 ---
 
@@ -85,13 +84,14 @@ Automated detection of object-level changes (added, removed, position-changed) b
 
 ### Competition Performance
 
-| Submission | Configuration | Kaggle F1 | Δ |
-|------------|---------------|-----------|---|
-| 1 | Baseline (Siamese + YOLOv8) | 0.5015 | - |
-| 2 | + Hungarian + Optimization | 0.5130 | +0.0115 |
-| 3 | + YOLOv11 | **0.5230** | +0.0100 |
+| Submission | Configuration | Added F1 | Removed F1 | Changed F1 | Overall F1 (Kaggle) | Δ |
+|------------|---------------|----------|------------|------------|---------------------|---|
+| 1 | Baseline (Siamese + YOLOv8) | ~0.48 | ~0.44 | ~0.40 | 0.5015 | - |
+| 2 | + Hungarian + Optimization | ~0.49 | ~0.50 | ~0.55 | 0.5130 | +0.0115 |
+| 3 | + YOLOv11 | ~0.51 | ~0.57 | ~0.64 | **0.5230** | +0.0100 |
 
-**Total Improvement:** +0.0215 (4.3%)
+**Note:** Category F1 scores are validation estimates (~ indicates approximate values)
+**Validation-Test Discrepancy:** We achieved 0.574 F1 on our validation set but 0.523 on the Kaggle leaderboard—a gap of 0.051 that emphasizes the critical importance of representative validation splits.
 
 ### Leaderboard
 
@@ -375,30 +375,3 @@ MIT License - see [LICENSE](LICENSE) file.
 *Built with ❤️ by Team Octwave*
 ```
 
----
-
-## **FILE 4: `LICENSE`**
-
-**Create this in root folder** (`Octwave Final/LICENSE`)
-```
-MIT License
-
-Copyright (c) 2025 Team Octwave
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
