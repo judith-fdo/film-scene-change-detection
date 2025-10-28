@@ -363,13 +363,6 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
-## 📞 Contact
-
-- **GitHub:** [judith-fdo]
-- **Email:** [judithfdo2002@gmail.com]
-
----
-
 **⭐ If you found this helpful, please star the repo!**
 
 ---
